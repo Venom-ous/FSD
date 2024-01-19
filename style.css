@@ -1,0 +1,20 @@
+*{
+    border-radius: 20px;
+}
+
+#boss{
+    height : 600px;
+    width: 600px;
+    border: 3px solid blue;
+    margin: 10px auto;
+    display: flex;
+}
+
+.child{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    border: 3px solid black;    
+}
