@@ -23,22 +23,39 @@
 //     return el < 10;
 // });
 
-let btns = document.querySelectorAll("button");
-console.dir(btns);
+// let btns = document.querySelectorAll("button");
+// console.dir(btns);
 
 // btn.onclick = function(){
 //     console.log("button was clicked");
 // }
 
-for(btn of btns){
-    btn.onclick = sayHello;
-    btn.onmouseenter = () =>{
-        console.log("your mouse entered");
-    }
-}
+// for(btn of btns){
+//     btn.onclick = sayHello;
+//     btn.onmouseenter = () =>{
+//         console.log("your mouse entered");
+//     }
+// }
 
-function sayHello(){
-    alert("say hello");
-}
+// function sayHello(){
+//     alert("say hello");
+// }
 
-btn.onclick = sayHello;
+// btn.onclick = sayHello;
+
+// let form = document.querySelector("form");
+//  form.addEventListener("submit", function(events) {
+//     event.preventDefault();
+//     let inp = document.querySelector("input");
+//     console.log(inp.value);
+
+//  });
+
+
+ let inp = document.querySelector("#text");
+ let p = document.querySelector("p");
+
+ inp.addEventListener("input",function() {
+   console.log(inp.value);
+   p.innerText = inp.value;
+ });
